@@ -1,3 +1,19 @@
+/*
+Exercise 4: Refresh Tokens & Token Expiry Handling
+
+
+Improve security by implementing refresh tokens to extend session validity without requiring frequent logins. Refresh token is given along access token during sign in.
+
+
+Key Features:
+
+· Access tokens have a short expiration time (e.g., 15 minutes).
+
+· A separate refresh token (longer lifespan) allows users to request a new access token.
+
+· Logout functionality to invalidate refresh tokens.
+*/
+
 const express = require('express');
 const passport = require('passport');
 const JwtStrategy = require('passport-jwt').Strategy;

@@ -1,3 +1,19 @@
+/*
+Exercise 3: Role-Based Access Control (RBAC) with JWT
+
+Enhance the basic JWT authentication by assigning two roles (e.g., admin, user).
+
+The GET /posts should be available to both user groups.
+
+Create a new endpoint POST /posts, which is used to add new one line text messages to the service. Only “admin” user should be allowed access.
+
+Key Features:
+
+· Users receive a role upon login.
+
+· Middleware checks JWT and verifies if the user has the required role.
+*/
+
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
